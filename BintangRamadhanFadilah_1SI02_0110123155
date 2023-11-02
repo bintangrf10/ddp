@@ -1,0 +1,35 @@
+Tugas 1
+SpesifikasiKendaraan = ["NamaKendaraan", "JenisKendaraan", "CcKendaraan", "WarnaKendaraan", "RodaKendaraan"]
+SpesifikasiKendaraan.append("HargaKendaraan")
+SpesifikasiKendaraan.append("TipeKendaraan")
+SpesifikasiKendaraan.insert(2,"MerkKendaraan")
+print(SpesifikasiKendaraan)
+
+Tugas 2
+
+ket = '''Selamat datang di aplikasi pintar menghitung
+Berikut merupakan pilihan menghitung luas bangunan:
+1. Menghitung luas persegi
+2. Menghitung luas segitiga
+3. Menghitung luas lingkaran
+'''
+print(ket)
+pilih = input("Apa yang akan anda hitung?")
+match pilih:
+  case "1":
+   s = int(input("input sisi?"))
+   persegi = s*s
+   print("Luas persegi", persegi)
+  case "2":
+   l = 1/2
+   a = int(input("input alas?"))
+   t = int(input("input tinggi?"))
+   segitiga = l*a*t
+   print("segitiga")
+  case "3":
+   phi = 3.14
+   r = int(input("input jari?"))
+   lingkaran = (phi*r*r)
+   print("lingkaran")
+  case "4":
+   print("Tidak ada pilihan")
